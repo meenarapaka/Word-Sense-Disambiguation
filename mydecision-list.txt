@@ -1,0 +1,13 @@
+vote_feature	0.0	phone
+growth_feature	0.0	phone
+sales_feature	1	product
+computer_feature	0.0	phone
+dealers_feature	0.6020599913279624	product
+analysts_feature	0.7403626894942439	product
+network_feature	0.3010299956639812	product
+price_feature	0.6532125137753437	product
+telephone_feature	0.0	phone
+sale_feature	0.6020599913279624	product
+voice_feature	0.0	phone
+market_feature	0.6172999578846993	product
+service_feature	0.0	phone

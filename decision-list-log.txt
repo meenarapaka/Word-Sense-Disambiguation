@@ -1,0 +1,60 @@
+Script started on Wed Oct 31 18:56:34 2018
+[?1034hbash-3.2$ python decision-list.py line-train.xn[Kml line-test.xml mydecision-list.t xt > myline-answers.txtx[K
+bash-3.2$ py[K[Khead -50 mydecision-list.txtx[K
+vote_feature	0.0	phone
+growth_feature	0.0	phone
+sales_feature	1	product
+computer_feature	0.0	phone
+dealers_feature	0.6020599913279624	product
+analysts_feature	0.7403626894942439	product
+network_feature	0.3010299956639812	product
+price_feature	0.6532125137753437	product
+telephone_feature	0.0	phone
+sale_feature	0.6020599913279624	product
+voice_feature	0.0	phone
+market_feature	0.6172999578846993	product
+service_feature	0.0	phone
+bash-3.2$ head -0[K10 myline-answers.txt
+<answer instance="line-n.w8_059:8174:" senseid="phone"/>
+<answer instance="line-n.w7_098:12684:" senseid="phone"/>
+<answer instance="line-n.w8_106:13309:" senseid="phone"/>
+<answer instance="line-n.w9_40:10187:" senseid="product"/>
+<answer instance="line-n.w9_16:217:" senseid="phone"/>
+<answer instance="line-n.w8_119:16927:" senseid="phone"/>
+<answer instance="line-n.w8_008:13756:" senseid="phone"/>
+<answer instance="line-n.w8_041:15186:" senseid="phone"/>
+<answer instance="line-n.art7} aphb 05601797:" senseid="phone"/>
+<answer instance="line-n.w8_119:2964:" senseid="phone"/>
+bash-3.2$ python scorer.[[Kpy mu[Kyline-answers.txt line-answers.txt[Kt > wd[Ksdreport[K[K[K[K[K[K[K[K[K[K[K
+Accuracy of the classifier is: 64.0 
+
+Confusion Matrix:                       |       |
+                     |     s |
+                     |     e |
+                     |  s  n |
+                     |  e  s |
+                     |  n  e |
+                     |  s  i |
+                     |  e  d |
+                     |  i  = |
+                     |  d  " |
+                     |  =  p |
+                     |  "  r |
+                     |  p  o |
+                     |  h  d |
+                     |  o  u |
+                     |  n  c |
+                     |  e  t |
+                     |  "  " |
+                     |  /  / |
+                     |  >  > |
+---------------------+-------+
+   senseid="phone"/> |<69> 2 |
+ senseid="product"/> | 43<11>|
+---------------------+-------+
+(row = reference; col = test)
+
+bash-3.2$ exit
+exit
+
+Script done on Wed Oct 31 18:58:42 2018
